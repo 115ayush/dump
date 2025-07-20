@@ -7,8 +7,8 @@ export const ecoProducts: Product[] = [
     price: 299,
     originalPrice: 599,
     discount: 50,
-    image: '/public/kitchen.png',
-    images: ['/public/kitchen.png'],
+    image: '/kitchen.png',
+    images: ['/kitchen.png'],
     category: 'Home & Kitchen',
     subcategory: 'Kitchen Appliances',
     rating: 4.5,
@@ -27,7 +27,8 @@ export const ecoProducts: Product[] = [
       cashOnDelivery: true
     },
     isEcoFriendly: true,
-    carbonReduction: 67
+    carbonReduction: 67,
+    sustainabilityScore: 67
   },
   {
     id: 'eco-2',
@@ -35,8 +36,8 @@ export const ecoProducts: Product[] = [
     price: 199,
     originalPrice: 399,
     discount: 50,
-    image: './public/eco-2.png', // Replace with your image
-    images: ['./public/eco-2.png'],
+    image: '/eco-2.png',
+    images: ['/eco-2.png'],
     category: 'Bags & Footwear',
     subcategory: 'Handbags',
     rating: 4.2,
@@ -55,7 +56,8 @@ export const ecoProducts: Product[] = [
       cashOnDelivery: true
     },
     isEcoFriendly: true,
-    carbonReduction: 60
+    carbonReduction: 60,
+    sustainabilityScore: 60
   },
   {
     id: 'eco-3',
@@ -63,8 +65,8 @@ export const ecoProducts: Product[] = [
     price: 149,
     originalPrice: 299,
     discount: 50,
-    image: './public/eco-3.png', // Replace with your image
-    images: ['./public/eco-3.png'],
+    image: '/eco-3.png',
+    images: ['/eco-3.png'],
     category: 'Home & Kitchen',
     subcategory: 'Kitchen Appliances',
     rating: 4.4,
@@ -83,7 +85,8 @@ export const ecoProducts: Product[] = [
       cashOnDelivery: true
     },
     isEcoFriendly: true,
-    carbonReduction: 75
+    carbonReduction: 75,
+    sustainabilityScore: 75
   },
   {
     id: 'eco-4',
@@ -91,8 +94,8 @@ export const ecoProducts: Product[] = [
     price: 199,
     originalPrice: 399,
     discount: 50,
-    image: './public/eco-4.png', // Replace with your image
-    images: ['./public/eco-4.png'],
+    image: '/eco-4.png',
+    images: ['/eco-4.png'],
     category: 'Kids',
     subcategory: 'Kids Accessories',
     rating: 4.6,
@@ -111,7 +114,8 @@ export const ecoProducts: Product[] = [
       cashOnDelivery: true
     },
     isEcoFriendly: true,
-    carbonReduction: 80
+    carbonReduction: 80,
+    sustainabilityScore: 80
   },
   {
     id: 'eco-5',
@@ -119,8 +123,8 @@ export const ecoProducts: Product[] = [
     price: 399,
     originalPrice: 799,
     discount: 50,
-    image: './public/eco-5.png', // Replace with your image
-    images: ['/public/eco-5.png'],
+    image: '/eco-5.png',
+    images: ['/eco-5.png'],
     category: 'Home & Kitchen',
     subcategory: 'Home Decor',
     rating: 4.3,
@@ -139,7 +143,8 @@ export const ecoProducts: Product[] = [
       cashOnDelivery: true
     },
     isEcoFriendly: true,
-    carbonReduction: 50
+    carbonReduction: 50,
+    sustainabilityScore: 50
   },
   {
     id: 'eco-6',
@@ -147,8 +152,8 @@ export const ecoProducts: Product[] = [
     price: 299,
     originalPrice: 599,
     discount: 50,
-    image: '/public/eco-6.png', // Replace with your image
-    images: ['/public/eco-6.png'],
+    image: '/eco-6.png',
+    images: ['/eco-6.png'],
     category: 'Home & Kitchen',
     subcategory: 'Kitchen Appliances',
     rating: 4.5,
@@ -167,7 +172,8 @@ export const ecoProducts: Product[] = [
       cashOnDelivery: true
     },
     isEcoFriendly: true,
-    carbonReduction: 65
+    carbonReduction: 65,
+    sustainabilityScore: 65
   },
   {
     id: 'eco-7',
@@ -175,8 +181,8 @@ export const ecoProducts: Product[] = [
     price: 249,
     originalPrice: 499,
     discount: 50,
-    image: '/public/eco-7.png', // Replace with your image
-    images: ['/public/eco-7.png'],
+    image: '/eco-7.png',
+    images: ['/eco-7.png'],
     category: 'Home & Kitchen',
     subcategory: 'Kitchen Appliances',
     rating: 4.4,
@@ -195,7 +201,8 @@ export const ecoProducts: Product[] = [
       cashOnDelivery: true
     },
     isEcoFriendly: true,
-    carbonReduction: 70
+    carbonReduction: 70,
+    sustainabilityScore: 70
   },
   {
     id: 'eco-8',
@@ -203,8 +210,8 @@ export const ecoProducts: Product[] = [
     price: 1299,
     originalPrice: 2599,
     discount: 50,
-    image: '/public/eco-8.png', // Replace with your image
-    images: ['/public/eco-8.png'],
+    image: '/eco-8.png',
+    images: ['/eco-8.png'],
     category: 'Home & Kitchen',
     subcategory: 'Furniture',
     rating: 4.6,
@@ -223,7 +230,8 @@ export const ecoProducts: Product[] = [
       cashOnDelivery: true
     },
     isEcoFriendly: true,
-    carbonReduction: 50
+    carbonReduction: 50,
+    sustainabilityScore: 50
   },
   {
     id: 'eco-9',
@@ -231,8 +239,8 @@ export const ecoProducts: Product[] = [
     price: 899,
     originalPrice: 1799,
     discount: 50,
-    image: '/public/eco-9.png', // Replace with your image
-    images: ['/public/eco-9.png'],
+    image: '/eco-9.png',
+    images: ['/eco-9.png'],
     category: 'Home & Kitchen',
     subcategory: 'Storage',
     rating: 4.3,
@@ -251,6 +259,7 @@ export const ecoProducts: Product[] = [
       cashOnDelivery: true
     },
     isEcoFriendly: true,
-    carbonReduction: 65
+    carbonReduction: 65,
+    sustainabilityScore: 65
   }
 ];
