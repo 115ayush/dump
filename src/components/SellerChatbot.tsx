@@ -47,7 +47,7 @@ const SellerChatbot: React.FC = () => {
     setIsTyping(true);
 
     try {
-      const res = await fetch('https://smartsho-2.onrender.com/chat', {
+      const res = await fetch('https://smartsho-6.onrender.com/api/chatbot', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: currentInput })
@@ -57,10 +57,10 @@ const SellerChatbot: React.FC = () => {
 
       // Simulate realistic typing delay
       const typingDelay = Math.min(Math.max(currentInput.length * 50, 1000), 3000);
-      
+
       setTimeout(() => {
         setIsTyping(false);
-        
+
         const botReply: Message = {
           id: (Date.now() + 1).toString(),
           text: data.reply || '⚠️ No response received from server.',
@@ -69,7 +69,7 @@ const SellerChatbot: React.FC = () => {
         };
 
         setMessages(prev => [...prev, botReply]);
-        
+
         // Update detected language if provided
         if (data.detectedLanguage) {
           setDetectedLanguage(data.detectedLanguage);
@@ -163,19 +163,17 @@ const SellerChatbot: React.FC = () => {
                 className={`flex ${message.sender === 'user' ? 'justify-end' : 'justify-start'}`}
               >
                 <div
-                  className={`max-w-[80%] p-3 rounded-lg shadow-sm ${
-                    message.sender === 'user'
+                  className={`max-w-[80%] p-3 rounded-lg shadow-sm ${message.sender === 'user'
                       ? 'bg-pink-500 text-white rounded-br-none'
                       : 'bg-white text-gray-800 border rounded-bl-none'
-                  }`}
+                    }`}
                 >
                   <div className="flex items-start space-x-2">
                     {message.sender === 'bot' && <Bot className="w-4 h-4 mt-1 flex-shrink-0 text-pink-500" />}
                     <div className="flex-1">
                       <p className="text-sm whitespace-pre-wrap">{message.text}</p>
-                      <div className={`text-xs mt-1 ${
-                        message.sender === 'user' ? 'text-pink-100' : 'text-gray-400'
-                      }`}>
+                      <div className={`text-xs mt-1 ${message.sender === 'user' ? 'text-pink-100' : 'text-gray-400'
+                        }`}>
                         {message.timestamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                       </div>
                     </div>
@@ -184,10 +182,10 @@ const SellerChatbot: React.FC = () => {
                 </div>
               </div>
             ))}
-            
+
             {/* Typing Indicator */}
             {isTyping && <TypingIndicator />}
-            
+
             <div ref={messagesEndRef} />
           </div>
 
@@ -229,7 +227,7 @@ const SellerChatbot: React.FC = () => {
                 <Send className="w-4 h-4" />
               </button>
             </div>
-            
+
             {/* Status indicator */}
             <div className="mt-2 text-xs text-gray-400 text-center">
               {isTyping ? (
